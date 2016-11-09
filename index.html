@@ -147,10 +147,7 @@ if (ajaxRequest==null) {
   "lon":"0.213102",
   "lat":"51.1429",
   "details":"A Grade II listed five bedroom wing in need of renovation."}]</pre>   
-                    <p>(etc.)
-
-When this arrives, we’ll clear the existing markers and display the new ones, creating a rudimentary pop-up window for each one:</p>
-                                       
+                    <p>(etc.)                
                     <p>Finally, let’s wire this into the rest of our script. After we’ve added the map in initmap, let’s ask for the first load of markers, and set up an event to do this every time the map is panned. Add this just at the end of initmap:</p>
                     <pre>   askForPlots();
     map.on('moveend', onMapMove);
