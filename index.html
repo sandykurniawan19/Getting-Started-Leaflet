@@ -104,9 +104,11 @@ function initmap() {
     map.addLayer(osm);
 }</pre>
                     <p>Then include it in your embedding page like this:</p>
-                    <pre><!--<link rel="stylesheet" type="text/css" href="leaflet/leaflet.css" />
-<script type="text/javascript" src="leaflet/leaflet.js"></script>
-<script type="text/javascript" src="leaflet/leafletembed.js"></script>--> </pre>
+                    <pre>
+                    link rel="stylesheet" type="text/css" href="leaflet/leaflet.css"
+                    script type="text/javascript" src="leaflet/leaflet.js"
+                    script type="text/javascript" src="leaflet/leafletembed.js" 
+</pre>
                     <p>Add an appropriately-sized `div` called `map` to your embedding page; then, finally, add some JavaScript to your embedding page to initialise the map, either at the end of the page or on an `onload` event:</p>
                     <pre>initmap();</pre>
                     <p>Congratulations; you have embedded your first map with Leaflet.</p>
